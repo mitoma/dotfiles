@@ -10,6 +10,10 @@
 
    それぞれ公式サイトに移動して deb ファイルを手に入れるなりワンライナーを実行してセットアップする。
 
+   - https://www.google.com/intl/ja_ALL/chrome/
+   - https://code.visualstudio.com/
+   - https://rustup.rs/
+
 *** VSCode
 
     VSCodeは以下の 2 つの Extensions をインストールする
@@ -18,6 +22,10 @@
     - Rust (rls)
 
 ** 手動で設定するもの
+
+*** HIDPI
+
+    xubuntu だと 144 dpi 程度かなぁ
 
 *** dual boot win and ubuntu clock
 
@@ -36,5 +44,5 @@
 
 *** github の 2 要素認証を使ったログイン
 
-    PersonalToken を新たに払い出して以下を設定する
+    PersonalToken を新たに払い出して以下を設定する。 .netrc のこと。
     https://qiita.com/Asuforce/items/c2fa32e78d0d6fcf015d
