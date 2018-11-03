@@ -23,4 +23,12 @@ function replace_bin() {
     ln -s "${BASEDIR}/bin/${binfile}" "${BINDIR}/${binfile}"
 }
 
+function replace_config() {
+    configfile="$1"
+    rm -f "${HOME}/${configfile}"
+    ln -s "${BASEDIR}/config/${configfile}" "${HOME}/${configfile}"
+}
+
 replace_bin "ghq"
+
+replace_config ".bashrc"
