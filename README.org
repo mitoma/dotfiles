@@ -1,0 +1,40 @@
+* セットアップ手順
+
+** 自動で入れるもの
+
+   install.sh を実行する。
+
+** 手動で入れるもの
+
+   google-chrome, vscode, rustup
+
+   それぞれ公式サイトに移動して deb ファイルを手に入れるなりワンライナーを実行してセットアップする。
+
+*** VSCode
+
+    VSCodeは以下の 2 つの Extensions をインストールする
+
+    - Emacs Keymap
+    - Rust (rls)
+
+** 手動で設定するもの
+
+*** dual boot win and ubuntu clock
+
+    Windows と Ubuntu のデュアルブートするときには時計が9時間ずれる問題があるので以下を設定する。
+    http://yukihane.hatenablog.com/entry/201605/ubuntu16.04-datetime
+
+*** no capslock
+
+    caps lock を設定する日はないので以下を参考に設定する。
+    https://qiita.com/hirooooooaki/items/f404e76c6f171769412a
+
+*** natural scroll
+
+    ThinkPad の touchpad で natural scroll にするには以下の /etc/X11/Xsession.d/80synaptics の設定を入れるのが良い
+    https://askubuntu.com/questions/690512/how-to-enable-natural-scrolling-in-xfce4
+
+*** github の 2 要素認証を使ったログイン
+
+    PersonalToken を新たに払い出して以下を設定する
+    https://qiita.com/Asuforce/items/c2fa32e78d0d6fcf015d
