@@ -2,9 +2,19 @@
 
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y gnome-terminal fcitx-mozc curl git build-essential peco shellcheck emacs
+sudo apt install -y \
+     gnome-terminal \
+     fcitx-mozc \
+     curl \
+     git \
+     build-essential \
+     peco \
+     shellcheck \
+     emacs \
+     emacs-goodies-el \
+     screen
 
-BASEDIR=$(cd $(dirname $0); pwd)
+BASEDIR=$(cd "$(dirname "$0")" || return; pwd)
 BINDIR=${HOME}/bin
 
 function replace_bin() {
