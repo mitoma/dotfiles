@@ -18,6 +18,7 @@
 	pager = less
 	excludesfile = /home/mitoma/.gitignore_global
 	quotepath = false
+	editor = emacs -nw
 
 [http]
 	sslverify = false
