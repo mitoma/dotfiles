@@ -27,6 +27,12 @@
 
     xubuntu だと 144 dpi 程度かなぁ
 
+*** IME(fcitx-mozc)
+
+    xubuntu で普通に入れただけだと自動起動しないみたいなので Session and Startup で fcitx-autostart を autostart に追加する必要があるみたい。
+
+    https://qiita.com/tukiyo3/items/69ce214f25cbecbba9ff
+
 *** dual boot win and ubuntu clock
 
     Windows と Ubuntu のデュアルブートするときには時計が9時間ずれる問題があるので以下を設定する。
