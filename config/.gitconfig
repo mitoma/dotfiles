@@ -1,0 +1,26 @@
+[user]
+	name = mitoma
+	email = mutetheradio@gmail.com
+[push]
+	default = current
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	bt = branch
+	hist = log --pretty=format:\"%h %ad | %s %d [%an]\" --graph --date=short
+
+[color]
+	diff = auto
+
+[core]
+	pager = less
+	excludesfile = /home/mitoma/.gitignore_global
+	quotepath = false
+
+[http]
+	sslverify = false
+
+[ghq]
+	root = /home/mitoma/src

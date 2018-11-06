@@ -1,0 +1,7 @@
+escape ^z^z
+caption always "%3n %t%? @%u%?%? [%h]%?"
+hardstatus alwayslastline "%{-b gk}%-w%{+b kg}%50>%n %t%{-b gk}%+w%< "
+defutf8 on
+defencoding UTF-8
+termcapinfo xterm "ks=\E[?1l\E:ku=\E[A:kd=\E[B:kl=\E[D:kr=\E[C:kh=\E[5~:kH=\E[F"
+defscrollback 10000
