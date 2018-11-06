@@ -25,6 +25,8 @@ function replace_bin() {
 
 function replace_config() {
     configfile="$1"
+    configdir=$(dirname "$configfile")
+    mkdir -p "${HOME}/${configdir}"
     rm -f "${HOME}/${configfile}"
     ln -s "${BASEDIR}/config/${configfile}" "${HOME}/${configfile}"
 }
@@ -32,3 +34,7 @@ function replace_config() {
 replace_bin "ghq"
 
 replace_config ".bashrc"
+replace_config ".gitconfig"
+replace_config ".screenrc"
+replace_config ".emacs.d/init.el"
+replace_config ".config/peco/config.json"
