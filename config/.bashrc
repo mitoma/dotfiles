@@ -117,7 +117,21 @@ if ! shopt -oq posix; then
 fi
 
 # mitoma setting
+
 export PATH=${HOME}/bin:${PATH}
 export PATH=${HOME}/.cargo/bin:${PATH}
 
+export GOPATH=/home/mitoma
+
+function pet-select() {
+  BUFFER=$(pet search --query "$READLINE_LINE")
+  READLINE_LINE=$BUFFER
+  READLINE_POINT=${#BUFFER}
+}
+bind -x '"\C-x\C-r": pet-select'
+
+function ghq-move() {
+  cd ~/src/`ghq list | peco --on-cancel error`
+}
+bind -x '"\C-x\C-m": ghq-move'
 
