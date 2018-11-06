@@ -42,7 +42,7 @@
 
 ; (require 'org-install)
 ;; org-default-notes-fileのディレクトリ
-; (setq org-directory "~/org/")
+(setq org-directory "~/org/")
 ;;(setq org-directory "~/src/github.com/mitoma/org-memo")
 ;; org-default-notes-fileのファイル名
 (setq org-default-notes-file "notes.org")
@@ -77,10 +77,10 @@
     (4 (org-capture nil "M"))
     (t (org-capture nil "m"))))
 
-
-(require 'open-junk-file)
-(setq open-junk-file-format "~/src/github.dev.cybozu.co.jp/ryo-mitoma/org-memo/junk/%Y-%m-%d.org")
-(global-set-key "\C-xj" 'open-junk-file)
+;; open-junk-file 
+; (require 'open-junk-file)
+; (setq open-junk-file-format "~/src/github.com/mitoma/org-memo/junk/%Y-%m-%d.org")
+; (global-set-key "\C-xj" 'open-junk-file)
 
 
 ;; emacs mozc
