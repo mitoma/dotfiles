@@ -10,8 +10,9 @@ sudo apt install -y \
      build-essential \
      peco \
      shellcheck \
-     emacs \
-     emacs-goodies-el \
+     vim \
+     emacs emacs-goodies-el \
+     exfat-fuse exfat-utils \
      screen
 
 BASEDIR=$(cd "$(dirname "$0")" || return; pwd)
