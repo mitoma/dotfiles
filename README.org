@@ -52,3 +52,13 @@
 
     PersonalToken を新たに払い出して以下を設定する。 .netrc のこと。
     https://qiita.com/Asuforce/items/c2fa32e78d0d6fcf015d
+
+*** grub の解像度が細かすぎるのを大きくする
+
+    sudo vi /etc/default/grub
+
+    以下の一行を追加する
+
+    GRUB_GFXMODE=640x480
+
+    sudo grub2-mkconfig -o /boot/grub2/grub.cfg
