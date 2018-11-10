@@ -8,6 +8,7 @@ sudo apt install -y \
      curl \
      git \
      build-essential \
+     default-jdk \
      peco \
      shellcheck \
      vim \
