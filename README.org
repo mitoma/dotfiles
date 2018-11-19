@@ -43,6 +43,14 @@
     caps lock を設定する日はないので以下を参考に設定する。
     https://qiita.com/hirooooooaki/items/f404e76c6f171769412a
 
+*** 無変換/変換キーでIMEをtoggleじゃなく変更できるようにする。
+
+    Input Method Configuration -> Global Config
+    Show Advanced Option をチェックする
+    Activate input method に変換を Inactivate input method に無変換を割り当てる。
+
+    Input Method タブには "Keyboard - Japanese", "Mozc" の２つを設定する。
+
 *** natural scroll
 
     ThinkPad の touchpad で natural scroll にするには以下の /etc/X11/Xsession.d/80synaptics の設定を入れるのが良い
