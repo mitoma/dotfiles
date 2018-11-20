@@ -131,7 +131,8 @@ function pet-select() {
 bind -x '"\C-x\C-r": pet-select'
 
 function ghq-move() {
-  cd ~/src/`ghq list | peco --on-cancel error`
+  pwd="$(ghq list -p | peco --on-cancel error)"
+  cd "${pwd}"
 }
-bind -x '"\C-x\C-m": ghq-move'
+bind '"\C-x\C-m": "\erghq-move\n"'
 
