@@ -131,8 +131,11 @@ function pet-select() {
 bind -x '"\C-x\C-r": pet-select'
 
 function ghq-move() {
-  pwd="$(ghq list -p | peco --on-cancel error)"
-  cd "${pwd}"
+  move_path="${HOME}/src/$(ghq list | peco)"
+  if [ "${HOME}/src/" = "$move_path" ] ; then
+    return 0
+  fi
+  cd $move_path
 }
 bind '"\C-x\C-m": "\erghq-move\n"'
 
