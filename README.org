@@ -38,15 +38,34 @@
     Windows と Ubuntu のデュアルブートするときには時計が9時間ずれる問題があるので以下を設定する。
     http://yukihane.hatenablog.com/entry/201605/ubuntu16.04-datetime
 
+    具体的には以下のコマンドを実行する。
+
+    #+BEGIN_SRC sh
+sudo timedatectl set-local-rtc 1
+    #+END_SRC
+
 *** no capslock
 
     caps lock を設定する日はないので以下を参考に設定する。
+
     https://qiita.com/hirooooooaki/items/f404e76c6f171769412a
+
+    /etc/default/keyboard を編集する。
+
+    #+BEGIN_SRC
+XKBMODEL="pc105"
+XKBLAYOUT="jp"
+XKBVARIANT=""
+XKBOPTIONS="ctrl:nocaps" 
+BACKSPACE="guess"
+    #+END_SRC
 
 *** 無変換/変換キーでIMEをtoggleじゃなく変更できるようにする。
 
     Input Method Configuration -> Global Config
+
     Show Advanced Option をチェックする
+
     Activate input method に変換を Inactivate input method に無変換を割り当てる。
 
     Input Method タブには "Keyboard - Japanese", "Mozc" の２つを設定する。
@@ -54,11 +73,13 @@
 *** natural scroll
 
     ThinkPad の touchpad で natural scroll にするには以下の /etc/X11/Xsession.d/80synaptics の設定を入れるのが良い
+
     https://askubuntu.com/questions/690512/how-to-enable-natural-scrolling-in-xfce4
 
 *** github の 2 要素認証を使ったログイン
 
     PersonalToken を新たに払い出して以下を設定する。 .netrc のこと。
+
     https://qiita.com/Asuforce/items/c2fa32e78d0d6fcf015d
 
 *** grub の解像度が細かすぎるのを大きくする
