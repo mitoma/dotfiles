@@ -118,6 +118,9 @@ fi
 
 # mitoma setting
 
+# fcitx で Java アプリで日本語入力ができないケースに対応する
+# https://matoken.org/blog/2014/09/21/ibus-mozc_2_fcitx-mozc-josm/
+export XMODIFIERS="@im=fcitx"
 export PATH=${HOME}/bin:${PATH}
 export PATH=${HOME}/.cargo/bin:${PATH}
 
