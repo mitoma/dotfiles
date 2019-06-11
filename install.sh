@@ -34,6 +34,7 @@ function replace_config() {
 }
 
 replace_bin "ghq"
+replace_bin "terraform"
 
 replace_config ".bashrc"
 replace_config ".gitconfig"
