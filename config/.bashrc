@@ -142,3 +142,7 @@ function ghq-move() {
 }
 bind '"\C-x\C-m": "\erghq-move\n"'
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/mitoma/.sdkman"
+[[ -s "/home/mitoma/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mitoma/.sdkman/bin/sdkman-init.sh"

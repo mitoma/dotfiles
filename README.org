@@ -6,13 +6,14 @@
 
 ** 手動で入れるもの
 
-   google-chrome, vscode, rustup
+   google-chrome, vscode, rustup, sdkman
 
    それぞれ公式サイトに移動して deb ファイルを手に入れるなりワンライナーを実行してセットアップする。
 
    - https://www.google.com/intl/ja_ALL/chrome/
    - https://code.visualstudio.com/
    - https://rustup.rs/
+   - https://sdkman.io/
 
 *** VSCode
 
