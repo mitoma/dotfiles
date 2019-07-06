@@ -92,3 +92,7 @@ BACKSPACE="guess"
     GRUB_GFXMODE=640x480
 
     sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
+*** xfce4 を Emacs key bind にする
+
+    Xfceを用いるubuntu ディストロ xubuntuでのEmacsキーバインド化。 Settings Editor でxsetting -> KeyThemeName をEmacsにすればよい。
