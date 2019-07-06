@@ -96,3 +96,4 @@ BACKSPACE="guess"
 *** xfce4 を Emacs key bind にする
 
     Xfceを用いるubuntu ディストロ xubuntuでのEmacsキーバインド化。 Settings Editor でxsetting -> KeyThemeName をEmacsにすればよい。
+    ただし、使い勝手が若干微妙なので常用するかどうかは様子見。
