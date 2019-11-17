@@ -142,7 +142,12 @@ function ghq-move() {
 }
 bind '"\C-x\C-m": "\erghq-move\n"'
 
+alias m="ghq-move"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/mitoma/.sdkman"
 [[ -s "/home/mitoma/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mitoma/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
