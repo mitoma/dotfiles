@@ -134,8 +134,8 @@ function pet-select() {
 bind -x '"\C-x\C-r": pet-select'
 
 function ghq-move() {
-  move_path="${HOME}/src/$(ghq list | peco)"
-  if [ "${HOME}/src/" = "$move_path" ] ; then
+  move_path="$(ghq list --full-path | peco)"
+  if [ "" = "$move_path" ] ; then
     return 0
   fi
   cd $move_path
