@@ -6,14 +6,19 @@
 
 ** 手動で入れるもの
 
-   google-chrome, vscode, rustup, sdkman
+   google-chrome, rustup, sdkman, docker
 
    それぞれ公式サイトに移動して deb ファイルを手に入れるなりワンライナーを実行してセットアップする。
 
    - https://www.google.com/intl/ja_ALL/chrome/
-   - https://code.visualstudio.com/
    - https://rustup.rs/
    - https://sdkman.io/
+
+*** Docker
+
+    一般ユーザーで起動できるようにする
+
+    https://ytooyama.hatenadiary.jp/entry/2018/11/21/001426
 
 *** VSCode
 

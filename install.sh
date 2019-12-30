@@ -15,6 +15,8 @@ sudo apt install -y \
      emacs emacs-goodies-el \
      exfat-fuse exfat-utils \
      screen
+sudo snap install docker
+sudo snap install code --classic
 
 BASEDIR=$(cd "$(dirname "$0")" || return; pwd)
 BINDIR=${HOME}/bin
