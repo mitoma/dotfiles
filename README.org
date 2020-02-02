@@ -20,6 +20,16 @@
 
     https://ytooyama.hatenadiary.jp/entry/2018/11/21/001426
 
+    #+BEGIN_SRC
+~$ sudo addgroup --system docker
+~$ sudo adduser $USER docker
+~$ newgrp docker
+~$ sudo snap restart docker
+~$
+~$ ls -l /var/run/docker.sock
+srw-rw---- 1 root docker 0 Nov 20 15:44 /var/run/docker.sock
+    #+END_SRC
+
 *** VSCode
 
     VSCodeは以下の 2 つの Extensions をインストールする
