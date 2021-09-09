@@ -6,6 +6,7 @@ sudo apt install -y \
      fcitx-mozc \
      curl \
      git \
+     zip \
      build-essential \
      peco \
      shellcheck \
