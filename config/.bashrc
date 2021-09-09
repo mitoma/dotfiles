@@ -117,12 +117,14 @@ if ! shopt -oq posix; then
 fi
 
 # mitoma setting
+export SCREENDIR=$HOME/.screen
 
 # fcitx で Java アプリで日本語入力ができないケースに対応する
 # https://matoken.org/blog/2014/09/21/ibus-mozc_2_fcitx-mozc-josm/
 export XMODIFIERS="@im=fcitx"
 export PATH=${HOME}/bin:${PATH}
 export PATH=${HOME}/.cargo/bin:${PATH}
+export PATH=${HOME}/go/bin:${PATH}
 
 export GOPATH=/home/mitoma
 
@@ -145,4 +147,26 @@ bind '"\C-x\C-m": "\erghq-move\n"'
 alias m="ghq-move"
 
 # X410 を使うので DISPLAY 環境変数を設定する
-export DISPLAY="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0"
+# export DISPLAY="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0"
+export DISPLAY="$(hostname).mshome.net:0.0"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/mitoma/.sdkman"
+[[ -s "/home/mitoma/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mitoma/.sdkman/bin/sdkman-init.sh"
+
+# setup ime
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+# docker の container から WSL2 上の service に proxy するときに ip v4 だとつながらないので以下の設定が必要
+export _JAVA_OPTIONS=-Djava.net.preferIPv4Stack=true
+
+# PROMPT_COMMAND='/usr/bin/env > /tmp/bashenv'
+
+export VSCODE_BIN="$(wslpath -u 'C:\Users\mutet\AppData\Local\Programs\Microsoft VS Code\bin')"
+export PATH="${PATH}:${VSCODE_BIN}"
