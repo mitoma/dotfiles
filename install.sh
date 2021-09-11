@@ -17,6 +17,8 @@ sudo apt install -y \
 BASEDIR=$(cd "$(dirname "$0")" || return; pwd)
 BINDIR=${HOME}/bin
 
+mkdir -p $BINDIR
+
 function replace_bin() {
     binfile="$1"
     rm -f "${BINDIR}/${binfile}"
