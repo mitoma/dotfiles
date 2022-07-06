@@ -150,6 +150,9 @@ alias m="ghq-move"
 # export DISPLAY="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0"
 export DISPLAY="$(hostname).mshome.net:0.0"
 
+# EDITOR='emacsconfig -nw -a ""' だと flag を解釈できない tool (zellij) が動かないので shell script でラップする
+export EDITOR=default_editor
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -170,3 +173,4 @@ export _JAVA_OPTIONS=-Djava.net.preferIPv4Stack=true
 
 export VSCODE_BIN="$(wslpath -u 'C:\Users\mutet\AppData\Local\Programs\Microsoft VS Code\bin')"
 export PATH="${PATH}:${VSCODE_BIN}"
+. "$HOME/.cargo/env"
